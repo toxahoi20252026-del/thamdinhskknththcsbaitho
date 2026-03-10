@@ -36,12 +36,13 @@ export class GeminiService {
     3. Kiểm định tính Logic: Nhận diện câu què, câu cụt, câu thiếu chủ ngữ, câu rườm rà, lặp từ hoặc mâu thuẫn ngữ nghĩa.
     4. Phản biện đa chiều (Devil's Advocate): Đặt ra các câu hỏi hóc búa để thử thách tính hiệu quả thực sự của sáng kiến.
 
-    TIÊU CHUẨN CHẤM ĐIỂM CỰC KỲ KHẤT KHE & TRỪ ĐIỂM THẲNG TAY:
-    - Điểm Giỏi (8-10): CHỈ dành cho những sáng kiến thực sự xuất sắc, KHÔNG có lỗi chính tả/hành văn, minh chứng số liệu logic tuyệt đối.
+    TIÊU CHUẨN CHẤM ĐIỂM CỰC KỲ KHẤT KHE & TRỪ ĐIỂM THẲNG TAY (CHẤM CÔNG TÂM, KHÔNG CÀO BẰNG):
+    - Yêu cầu tuyệt đối: CHẤM ĐIỂM THẬT CHÍNH XÁC, CÔNG TÂM. Sáng kiến nào xứng đáng điểm cao (do viết thực tế, chân thực) thì chấm cao. Sáng kiến nào có dấu hiệu đạo văn, lạm dụng AI thì đánh điểm THẬT THẤP. TUYỆT ĐỐI không chấm điểm một cách chung chung, dĩ hòa vi quý.
+    - Điểm Giỏi (8-10): CHỈ dành cho những sáng kiến thực sự xuất sắc, tự viết, KHÔNG có lỗi chính tả/hành văn, minh chứng số liệu logic tuyệt đối và có tính ứng dụng thực tiễn cao ở địa phương.
     - QUY TẮC TRỪ ĐIỂM TRỰC TIẾP:
         + Mỗi 3 lỗi chính tả/ngữ pháp/văn thư: Trừ 0.1 điểm ở mục Hình thức. Nếu quá 10 lỗi, mục Hình thức tối đa chỉ được 0.5 điểm.
         + Phát hiện lỗi "văn nói" hoặc câu rườm rà: Trừ điểm văn phong.
-        + Nếu "Hố ngăn cách phong cách" ở mức Cao hoặc Đạo văn >= 21%: Khống chế tổng điểm không quá 5.9 điểm.
+        + Nếu "Hố ngăn cách phong cách" ở mức Cao hoặc Đạo văn >= 21%: Khống chế tổng điểm không quá 5.9 điểm (Hoạt động AI và copy quá liều).
 
     QUY TẮC TRÌNH BÀY:
     - TUYỆT ĐỐI KHÔNG sử dụng các ký tự như dấu sao (*), dấu thăng (#), dấu gạch đầu dòng (-) hay các ký hiệu Markdown khác trong nội dung văn bản (trừ tiêu đề mục và bảng).
@@ -135,19 +136,20 @@ export class GeminiService {
     Điểm Hiệu quả: [X]/2
 
     III. ĐÁNH GIÁ TÍNH XÁC THỰC & NGUYÊN BẢN (AI & Plagiarism Forensics)
+    (Mục này phải phân tích thật SÂU SẮC, CHI TIẾT ĐẾN TỪNG CÂU TỪ, chỉ rõ điểm sai trái để tác giả thật sự phục. Không nhận xét chung chung hời hợt).
     Chỉ số tin cậy: [X]% (Mức độ: Thấp/Trung bình/Cao)
     Phân tích chuyên sâu:
     1. Phân tích "Dấu vân tay số" AI: 
-    Nghi vấn: (Phân tích cấu trúc văn bản có dấu hiệu máy móc hay không)
-    Trích dẫn bằng chứng: (Chỉ ra các đoạn văn quá khuôn mẫu)
+    Nghi vấn: (Phân tích sâu cấu trúc văn bản xem có mang mô típ biểu đạt của máy móc, liệt kê đồng đẳng, sử dụng các từ ngữ đao to búa lớn nhưng rỗng tuếch hay không)
+    Trích dẫn bằng chứng: (Chỉ đích danh các câu văn, đoạn văn cụ thể có sặc mùi AI sinh ra và giải thích vì sao)
     2. Phân tích "Hố ngăn cách phong cách" (Style Gap Analysis):
-    Nghi vấn: (Chỉ ra sự không đồng nhất về văn phong giữa các phần)
-    Trích dẫn bằng chứng: (So sánh sự khác biệt về từ vựng và cấu trúc câu)
+    Nghi vấn: (Chỉ ra sự đứt gãy mạch văn, sự chênh lệch rõ ràng về trình độ ngữ pháp/từ vựng giữa phần lý thuyết [thường copy/dùng AI] và phần ví dụ hành động thực tiễn [viết tay gượng gạo])
+    Trích dẫn bằng chứng: (Trích dẫn phần mâu thuẫn phong cách để đặt lên bàn cân so sánh)
     3. Kiểm tra Bối cảnh địa phương & Trải nghiệm thực tế:
-    Nghi vấn: (Sáng kiến có thực sự gắn với Trường TH&THCS Bãi Thơm không?)
-    Trích dẫn bằng chứng: (Tìm kiếm các minh chứng về tình huống sư phạm thực tế)
-    4. Phân biệt Kế thừa và Đạo văn: (Nhận xét công tâm)
-    5. Chỉ số đạo văn (Similarity): [X]% (Ước tính)
+    Nghi vấn: (Phân tích xem sáng kiến có thật sự xuất phát từ thực tiễn Trường TH&THCS Bãi Thơm hay chỉ lấy văn mẫu ở nơi khác đắp vào? Có cảm xúc thật của người đứng lớp không?)
+    Trích dẫn bằng chứng: (Chỉ ra điểm phi lô-gic, các con số vô hồn, hay các chi tiết quá chung chung không gắn với địa phương)
+    4. Phân biệt Kế thừa và Đạo văn: (Nhận xét trực diện, công tâm: tác giả thực sự tiêu hóa kiến thức làm của mình, hay chỉ xào nấu/ăn cắp công sức của người khác?)
+    5. Chỉ số đạo văn (Similarity): [X]% (Ước tính khách quan - Bạn phải NÂNG TỈ LỆ ĐẠO VĂN CỘNG THÊM 5% so với mức đánh giá thông thường để trừ hao thủ thuật lách luật. Ví dụ: Tính ra 12% thì ghi là 17%, tính ra 18% thì phải nâng lên ghi là 23%.)
 
     IV. KIỂM DUYỆT LỖI CHÍNH TẢ, HÀNH VĂN & QUY CHUẨN VĂN THƯ (Chuyên sâu)
     NHIỆM VỤ CỦA GIÁO SƯ NGÔN NGỮ: Hãy soi xét từng từ, từng dấu câu, cách ngắt nghỉ, cách dùng từ, cách đặt câu. Tìm ra TẤT CẢ các lỗi:

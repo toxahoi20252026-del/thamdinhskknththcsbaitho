@@ -1174,7 +1174,7 @@ function MainApp() {
 
             <div className="mt-10 pt-8 border-t border-slate-100 text-center">
               <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">
-                Phân hiệu trường TH&THCS Bãi Thơm
+                Trường TH&THCS Bãi Thơm
               </p>
             </div>
           </div>
